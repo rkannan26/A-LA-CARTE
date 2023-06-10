@@ -27,7 +27,7 @@ def save_data():
         return
     if restaurant_name == "N/A":
         # Only fetch restaurant data from Yelp's API for the location
-        api_key = "7G65aR12lTk2xZq9jWIE3tljqDF-JpZA6CEFhyKXa_CON_BmMTr_Hx0OVJkGb_D_3MPKQZkZQeoOP_u2NGnbPqHlRMwmxbjGN5MpWgs2R48plXW7nnWvDCQyynuCZHYx"
+        api_key = ""
         restaurants = get_restaurants(api_key, location)
 
 
@@ -59,7 +59,7 @@ def save_data():
             file.write(f"Restaurant: {restaurant_name}\n\n")
 
         # Fetch restaurant data from Yelp's API
-        api_key = "7G65aR12lTk2xZq9jWIE3tljqDF-JpZA6CEFhyKXa_CON_BmMTr_Hx0OVJkGb_D_3MPKQZkZQeoOP_u2NGnbPqHlRMwmxbjGN5MpWgs2R48plXW7nnWvDCQyynuCZHYx"
+        api_key = ""
         restaurants = get_restaurants(api_key, location)
 
         if restaurants:
